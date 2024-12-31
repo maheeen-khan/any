@@ -1,0 +1,133 @@
+8 : 41
+Hot reload by Ctrl+S
+
+widget k upper Alt + Enter click krna he
+routes behave as a Map : Key value pair
+if we want to go another page from that we pressed a button , so that :
+
+  child: ElevatedButton(
+                  onPressed: (){
+                    Navigator.pushNamed(context, '/dashboard'); //add this 
+                    },
+                  child: Text('Let us Help you!')),
+            ),
+& on main.dart :
+adding routes :
+
+'/dashboard': (context) => dashBoard(), -> [ widget name dashBoard() ]
+
+--------------------------------------------------
+
+children -> Center -> child OR children -> Text() // direct child widget come
+
+if things are on left/ right Then we will use : row()
+& if things are on top/ bottom Then we will use : Column()
+
+ListView and Column me 1 difference hota he 
+ListView me 1 hi pattern hota he designing 
+
+SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+...
+)
+
+Appbar me color change krna : foregroundColor()
+
+To change background color of a row, you can wrap up children's content (children[] ) with a container and set color like this : 
+
+	Container(
+                color: Colors.blue,
+	...
+	) 
+
+bcoz in a container , backgroundColor property does not exist, so we use color property to change background color
+
+-To change border radius:
+
+Container(
+
+            decoration: BoxDecoration(
+              color: Colors.pink[100], // Background color of the container
+              borderRadius: BorderRadius.circular(16), // Set circular border radius
+            ),
+...
+) 
+ 
+There is no widget of margin unlike padding, use only margin property
+
+	 margin: EdgeInsets.all(16.0),
+
+Jo cheez overflow kr rahi he , us k parent pr SingleScrollView laga dengey
+
+////////  to change text color:
+
+- color:
+- foregroundColor:
+
+stless
+
+Stateless widgets, Stateful widgets, Simple widgets.
+
+- Navigation-bar property is inside the Scaffold
+
+in scaffold widget : 
+	bottomNavigationBar : BottomNavigationBar(
+
+	items :[... take many destination widgets
+
+	BottomNavigationBarItem(color: Colors.red),
+	BottomNavigationBarItem(color: Colors.red),
+	BottomNavigationBarItem(color: Colors.red),
+	BottomNavigationBarItem(color: Colors.red),
+
+	]
+
+	)
+
+
+Icon(
+  Icons.favorite, // Choose an icon from the Icons library
+  color: Colors.red, // Set the icon color
+  size: 30.0, // Set the icon size
+),
+we can use pre built icons.
+
+place bottomNavigationBar at the end of the Scaffold, outside body widget :
+
+	bottomNavigationBar: BottomNavigationBar(items: [
+
+        BottomNavigationBarItem(
+          icon:Icon(Icons.home),
+          backgroundColor: Colors.deepOrange,
+          label: 'Home',
+        ),
+
+        BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            backgroundColor: Colors.green,
+            label: 'Info',
+        ),
+
+        BottomNavigationBarItem(
+            icon: Icon(Icons.person) ,
+          backgroundColor: Colors.yellow,
+          label: 'Profile',
+        ),
+      ]), 
+
+inner content same , but design is same so we use 'Listview'.
+Listview me agr content overflow hoga to automatically scroller generate hojayega , Hamen khud se lagane ki need nhi hogi SingleScrollView
+
+-listView
+-listView.builderClass
+-listView.seperatedClass
+
+-listView :
+
+	ListView(
+		children:[
+			Text('one'),
+			Text('one'),
+			Text('one'),
+		]
+	)
