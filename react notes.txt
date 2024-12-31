@@ -1,0 +1,99 @@
+id root  pr sara kaam hoga 
+hm sara kaam app.js pr karengey
+
+-mvc
+-jsx
+-spa
+
+cd foldername 
+npm install web-vitals
+npm start 
+
+
+------------------
+
+return sirf 1 cheez hoti he, 1 sath 2 elements nhi likh skte baghair parent k 
+2 elements ko agr likhna he to usey 1 parent me band kr dengey (div)
+
+npm run build -> then a folder named build made , then this folder drag to netlify for hosting
+
+css import : import './App.css'
+
+jsx me Javascript {varName / js} bracket me likhte hen 
+
+html me hm attribute kehte they style="", Jsx me hm isey props kehte hen : style={}
+
+style={} 1st bracket JS likhne k liye, 
+and 2nd bracket : style prop object leta he or object likhne k liye {} hota he
+
+functions, variables and objects declared 'function' k andr or 'return' se bahar hote hen.
+
+map wahi array return krta he
+
+<ul> 
+	{studenntData.map((ele, index) => <li key={index}> {ele.name} </li>)} /
+std.map(()=>(<li>hi</li>)) -> round bracket instead of {} agr 1 se ziadah li hen to,
+</ul>
+
+
+---------
+
+rafc -> react arrow function component 
+
+by installing : Es7 snippets
+
+<button onClick={onlyFunctionName}> Click </button> /
+<button onClick={ ()=> functionName('arguments pass') }>
+
+src / components / Header.jsx 
+
+component call -> <componentName/>
+
+sb kuch return k div k andr krna he 
+
+components k andr 1 styling sheet banayengey all components k liye
+
+images store krne k liye assets folder banayengey src k andr
+
+------------
+
+Javascript sari return se pehle likhte hen Or agr return k andr JS likhni he to {} k andr likhengey.
+
+arr.map( (v,i)=> <li key={i}> {`${v} ${i}`} </li> )
+
+const arr = [ 
+{
+	"name" : "Ashna",
+	"age" : "15"
+},
+{
+	"name" : "Ashna",
+	"age" : "15"
+}
+];
+return(
+<div> arr.map( (ele)=> (
+	<card>
+		<h1> {{ele.name}} </h1>
+		<h3> {{ele.age}} </h3>
+	</card>
+) )</div>
+);
+
+
+---
+
+props -> properties
+
+props consists of : props name & props value 
+
+<Card pName={"shoes"} pPrice = {'5'}/>
+
+in component : first receive props , then in return div props.pName
+
+props receive as an object,
+
+we destructure props , const Card( {pName, pPrice} )
+
+- arrow of objects make
+- then products.map( (v,i)=> <Card pName={v.pName}/> )
