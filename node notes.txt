@@ -1,0 +1,20 @@
+common js moduule & ES6 modules
+
+____.mjs , file extension in which we build ES6 modules & use export and import & write "type" : "module", author k neechey in package.json
+
+& when use only common js modules, so there should not be "type" : "module" otherwise error
+
+import * as a2 frm './modulesecond.mjs' //in this a2 behaves as whole file 
+console.log(a2.simple())		// a function in a2
+
+myEmitter.on('waterfull', ()=>{
+...jb event occur hoga tab ye code run hoga , it's an event listener
+});
+
+like [ myEmitter.emit('waterfull'); ]
+
+- Event Module
+- HTTP Module
+
+
+
