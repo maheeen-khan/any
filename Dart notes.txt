@@ -1,0 +1,44 @@
+create flutter project from cmd : 
+goto flutter project folder -> cmd -> write : flutter create "projectName"
+
+create then open from android studio
+
+-> Simulator / Emulator / Virtual Device : output us pr show hoga
+search Device Manager -> create virtual device -> select Pixel 4 -> download R version -> set device name: flutter ...
+
+device manager -> for running project
+
+goto the android -> then project : for open correct structure of project
+
+if this erroroccured : Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+
+then project closed -> again open android studio -> setting -> last opyion -> update
+
+import 'dart:io';
+-> stdout.write() / print()
+-> var a = stdin.readLineSync() -> for input
+
+Human() / new Human() -> making object
+
+int a; it can't be used without initialization
+int? a; it holds null, and it can be used without initilazation
+
+listname.add(10) & listname.addAll(another list) , add : in end
+
+particular place pr add in list -> name.insert(2,100)
+
+listname.insertAll(another list)
+
+footballplayers.forEach( (names)=>print(names));
+
+try catch , main me krte hen & if condition check , class me krte hen
+
+// Declaring a nullable variable by using ?
+String? name;
+
+// Using ?? operator to assign a default value
+String name1 = name ?? "Stranger";
+
+Future In Dart -> same as promise
+
+Future.delayed(Duration(seconds: 2), () => 'Mark') -> time & functions
