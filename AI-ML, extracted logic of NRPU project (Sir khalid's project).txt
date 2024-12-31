@@ -1,0 +1,26 @@
+The extracted logic from the paper on "Assessing Firm-Specific Characteristics and Macroeconomic Environment for Determining Investment Risk in Pakistan" can be summarized as follows:
+
+# Research Purpose 
+The paper aims to develop an **Investor Risk Assessment Model (IRAM)** that assesses and predicts investment risks in Pakistan by examining both **firm-specific characteristics** and **macroeconomic factors**. The goal is to provide a reliable tool for investors to understand and manage risk more effectively.
+
+# Key Elements and Approach 
+1. Investment Risk Indicators: The model assesses investment risk by focusing on indicators at two levels:
+   - **Micro Level (Firm-Specific)**: Characteristics like liquidity, leverage, profitability, solvency, and activity ratios for individual firms.
+   - Macro Level (Country-Specific): Factors like political stability, economic performance, and financial stability that shape the broader investment environment.
+
+2. Data Sources:
+   - Firm-specific data (2018-2023) is derived from financial statements of non-financial companies listed on the Pakistan Stock Exchange.
+   - Macroeconomic data includes political, economic, and financial risks from sources like the International Country Risk Guide and the State Bank of Pakistan.
+
+3. Analytical Framework:
+   - Structural Equation Modeling (SEM): Used to analyze the relationships between observed (measurable) and latent (theoretical) variables. SEM is preferred over other methods (e.g., regression) due to its ability to estimate both direct and indirect effects among variables.
+   - Altman’s Z-score: Applied to measure the risk of bankruptcy and assess firms’ financial stability.
+
+4. Hypotheses and Variable Interaction:
+   - The model explores how individual indicators (e.g., leverage, profitability) interact with macroeconomic factors to determine overall investment risk.
+   - SEM captures two-way causation between micro- and macro-level factors, enabling an assessment of how firm performance and broader economic conditions affect each other.
+
+# Key Findings and Predictive Capabilities
+The IRAM identifies patterns and trends in past data to predict future risks. By examining the relationships between micro- and macro-level factors, the model helps forecast investment challenges and identify high-risk areas. This data-driven approach is expected to support investment decisions in Pakistan by offering insights into both immediate and long-term risk patterns.
+
+In essence, the paper integrates firm-specific and macroeconomic indicators to construct a predictive model that informs investors about the risks associated with investing in Pakistan.
