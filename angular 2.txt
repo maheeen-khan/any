@@ -1,0 +1,194 @@
+clone -> npm install -> ( if not install then npm install --force) -> npm start
+
+ng new appName OR ng new appName--standalone false
+
+in 1 component, 5 files are present. 
+mongo, sql, typescript 
+
+Pipes transform data in templates (e.g., formatting).
+
+Angular detects the change and re-renders the DOM, either adding or removing the h1 element.
+
+rendering in Angular is the process of generating and updating the DOM based on the state of the application and user interactions, leveraging its efficient change detection and Ivy rendering engine.
+
+Browser Typescript ko nhi smjhta, Angular khud hi TS ko Javascript me convert krdeta
+
+Type defined hoti he hr variable or function k parameters k sath .
+
+marks : number, details: {name : string, phoneNo : number} its mean details is a object
+items : string[] // its mean items is a string array
+
+ctrl + C -> stop the code execution
+
+app.routes.ts behaves like app.module.ts
+
+- button disabled until fields are filled , :
+(click)="onSubmit(taskForm)" 
+[disabled] ="taskForm.invalid" 
+
+Adminweb -> npm start for angular app
+API -> npm serve for node js app
+
+Routing App:
+
+1) Generate a project with routing options -> ng new fileName --routing --no-standalone 
+2) Generate differents components for navigate to each other 
+3) Config the routes
+4) Add butons & use directives to navigate
+
+complette 1st step:
+[           * after step 1, goto index.html & add base tag with href /
+            * create "app-routing-module.ts" in app folder                        ]
+
+-> visibility (*ngIf) and class (ngClass) conditions
+
+
+-> for images : make assets folder , include image, & most important : include path image in angular.json
+
+-> using bootstrap in Angular :
+1) download bootstrap
+2) include in angular.json file
+3) add link in index.html
+4) now you can use boostrap classes 
+
+Learning Angular and made a Routing App in Angular for practice.
+
+& Learning Flutter and make a Flutter App for better Learning which is about "Health Fitness".
+
+ngrx & life cycle hooks
+
+*ngFor :
+-> To get the index of each item during iteration:
+
+<ul>
+  <li *ngFor="let item of items; index as i">
+    {{ i + 1 }}. {{ item }}
+  </li>
+</ul>
+
+Conditional Rendering with *ngIf
+Combining *ngFor with *ngIf to filter displayed items:
+
+<ul>
+  <li *ngFor="let item of items" *ngIf="item.startsWith('A')">
+    {{ item }}
+  </li>
+</ul>
+Alternatively, use <ng-container> to avoid multiple structural directives on the same element:
+
+<ng-container *ngFor="let item of items">
+  <li *ngIf="item.startsWith('A')">
+    {{ item }}
+  </li>
+</ng-container>
+
+-> We use constructor when we want : page load hone pr kuch show krwana chahen, we also use this for initializing the variables 
+-> API call hamen ngOnIt() or life cycle hook me krna he
+
+-> ngOnIt() runs when components load , components load hone pr kuch show krwana he to we use it
+
+-> LifeCycleHooks ko use krne k liye ____.component.ts wali file me , 
+Angularcore se import karengey  & export class wali line me usey implements krdengey Then us life cycle hook ka use karengey 
+
+-> e.g hook :
+ngOnIt() : void {
+	....
+}  
+
+-> Lifecycle hooks are timed methods that get activated by Angular change detection.
+
+-> After the completion of child component rendering, ngOnInit() gets invoked. 
+
+Imp :
+- Data Binding
+- Directives
+  Structural Directives:
+
+*ngFor: Loop through arrays.
+*ngIf: Conditional rendering.
+*ngSwitch: Switch-case-like functionality.
+Attribute Directives:
+
+Example: [style], [class], ngClass, ngStyle.
+
+- Template-Driven Forms
+- Reactive Forms
+- HTTP Client
+- CRUD operations with services (e.g., HttpClient.get(), HttpClient.post()).
+
+- lifecycle hooks :
+
+1) ngOnInit(): Called after the component initializes.
+2) ngOnChanges(): Called when input properties change.
+3) ngOnDestroy(): Cleanup logic.
+
+- State Management
+	NgRx
+
+-> Types of APIs:
+	- Rest APIs
+	- OS APIs
+	- Database APIs
+-> Typesof Database APIs:
+	- SQL APIs
+	- No SQL APIs [Mongodb APIs]
+	- Cloud APIs
+ 
+-> Database APIs: Allow applications to interact with databases, such as JDBC (Java Database Connectivity) or MongoDB APIs.
+
+-> NoSQL Database APIs:
+
+* Designed for non-relational databases like key-value stores, document stores, or graph databases.
+Examples:
+MongoDB API: Allows interaction with MongoDB databases using queries in JSON-like format.
+
+- we use [routerLink] = "['/about']" in <a> tag to go other component / page
+
+///////////////////////////////////////
+
+Mongoose CRUD MongoDB Operation : 
+
+- module.exports = function(app){
+	const customer = require('../controllers/customer.controller.js');
+
+	app.post('/api/customers', customer.create);	 //create a new customer
+	app.get('/api/customers', customer.findAll);	 //retrieve all customer
+	app.get('/api/customers/:customerId', customer.findOne); //retrieve a single customer by Id
+	app.put('/api/customers', customer.update); 	//update a customer with Id
+	app.delete('/api/customers/:customerId' , customer.delete); 	//Delete a customer with Id
+}
+
+-> Inspect -> Network -> Name -> preview , then all json data come from DB will be show
+
+Workflow Summary : 
+1) Admin opens the form in the Angular app. 
+
+	either : new form make and put value of specific person 
+	or : goto create form and puts data value of specific id in these fields. 
+
+2) Admin edits the hours field and submits the form.
+3) Angular sends a request with updated hours to the backend API.
+4) The backend validates the data and updates the MongoDB database.
+5) The backend responds with success or error, and the Angular app reflects the updated hours.
+
+-> Redux is a state management library for JavaScript applications.
+
+Core Concepts of Redux:
+	1) Store
+	2) Actions
+	3) Reducers
+	4) Dispatch
+	5) Selectors
+
+- state change hoti he reducers se 
+- selectors are functions that extract specific pieces of state from application state.
+- reducer are functions that perform some particular task. 
+
+-> Purpose of a Service File: 
+
+	- Services encapsulate non-UI-specific logic, such as fetching data from a backend or performing calculation
+	- We can do Data Fetching in service file, from REST APIs using HttpClient.
+	  Example: A service that retrieves a list of employees or products.
+
+when a web server does not understands a computers request due to a client side error. 
+
